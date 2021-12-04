@@ -6,8 +6,8 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body wraper__boby">
-  <header>
+<body class="page-body">
+  <header class="page-header">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" alt="Логотип Седона">
     </a>
@@ -16,7 +16,7 @@
       <div class="main-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная </a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Фото и видео</a>
@@ -42,11 +42,11 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages__head">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ol class="advantage__list">
-          <li class="advantages__item  advantages-item--solid">
-            <h3 class="advantage__title">Настоящий городок</h3>
-            <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="advantages-image" src="img/photo-city@1x1.jpg" width="520" height="260" alt="Седона-фото">
+        <ol class="advantages__list">
+          <li class="advantages__item  advantages__item--solid">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages__image" src="img/photo-city@1x1.jpg" width="520" height="260" alt="Седона-фото">
             <ul class="features">
               <li class="features__item features__item--apartment">
                 <h4 class="features__title">Жилье</h4>
@@ -62,32 +62,32 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item advantages__item__two">
-            <h3 class="advantage__title advantages-item--image">Там есть мост дьявола</h3>
-            <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages-image__two" src="img/photo-bridge@1x1.jpg" width="520" height="260"
+          <li class="advantages__item advantages__item--solid">
+            <h3 class="advantages__title advantages__title--image">Там есть мост дьявола</h3>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="advantages__image advantages__image--two" src="img/photo-bridge@1x1.jpg" width="520" height="260"
               alt="Мост дьявола">
           </li>
           <li class="advantages__item">
-            <h3 class="advantage__title">Небольшая площадь</h3>
-            <p class="advantage__description">Все интересные места находятся очень близко</p>
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantage__title">Красивая дорога</h3>
-            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantage__title">Мало туристов</h3>
-            <p class="advantage__description">Большинство едет в гранд каньон и толпится там</p>
+            <h3 class="advantages__title">Мало туристов</h3>
+            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </div>
     </section>
-    <section class="interes">
+    <section class="search">
       <h2 class="visually-hidden">Заинтересовались?</h2>
       <p class="search__head">Заинтересовались?</p>
-      <p class="interes__text">Укажите предполагаемые даты поездки и мы покажем лучшие предложения гостиниц в Седоне</p>
-      <a class="button interes__link-to-form" href="#">найти гостиницу</a>
+      <p class="search__text">Укажите предполагаемые даты поездки и мы покажем лучшие предложения гостиниц в Седоне</p>
+      <a class="button search__button" href="#">найти гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
@@ -95,34 +95,29 @@
       </div>
     </section>
   </main>
-  <footer>
-    <b class="social__title">#VISITSEDONA</b>
-    <div class="page-footer__wrapper">
-      <div class="page-footer__social">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--tvitter" href="#"><img src="img/icon-twitter.svg" alt="Твиттер"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><img src="img/icon-facebook.svg"
-                  alt="Фейсбук"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#"><img src="img/icon-youtube.svg" alt="Ютуб"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="copyright">Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-          <img class="copyright__logo" src="img/icon-htmlacademy.png" width="27" height="34" alt="Логотип HTML Academy">
-        </a>
-      </p>
-</div>
+  <footer class="page-footer">
+    <b class="page-footer__social-hashtag">#VISITSEDONA</b>
+    <ul class="page-footer__social-list">
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"><img src="img/icon-twitter.svg"
+            alt="Твиттер"></a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><img src="img/icon-facebook.svg"
+            alt="Фейсбук"></a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><img src="img/icon-youtube.svg"
+            alt="Ютуб"></a>
+      </li>
+    </ul>
+    <p class="copyright">Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <img class="copyright__logo" src="img/icon-htmlacademy.png" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </p>
   </footer>
-
 </body>
 
 </html>
