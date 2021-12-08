@@ -42,7 +42,9 @@
     <h2 class="visually-hidden">Форма для отзыва</h2>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form-name">
-        <legend class="review-form__legend"><h2>Представьтесь</h2></legend>
+        <legend class="review-form__legend">
+          <h3>Представьтесь</h3>
+        </legend>
         <ul class="form-name__list">
           <li class="form-name__item">
             <label for="name" class="form-name__label">Имя*:</label>
@@ -60,7 +62,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-contacts">
-        <legend class="review-form__legend">Контактная информация</legend>
+        <legend class="review-form__legend"><h3>Контактная информация</h3></legend>
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label for="phone" class="form-contacts__label">Контактный телефон*:</label>
@@ -75,7 +77,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-mark">
-        <legend class="review-form__legend">Ваши общие впечатления:</legend>
+        <legend class="review-form__legend"><h3>Ваши общие впечатления:</h3></legend>
         <ul class="form-mark__list">
           <li class="form-mark__item">
             <input class="form-mark__selector" type="radio" name="good" id="good" value="bood" checked>
@@ -92,7 +94,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-attractions">
-        <legend class="review-form__legend">Посещенные достопримечательности</legend>
+        <legend class="review-form__legend"><h3>Посещенные достопримечательности</h3></legend>
         <ul class="form-attractions__list">
           <li class="form-attractions__item">
             <input class="form-attractions__checker" type="checkbox" name="bridge" id="bridge" value="bridge" checked>
@@ -113,7 +115,7 @@
         </ul>
       </fieldset>
       <fieldset class="review-text">
-        <legend class="review-form__legend">Опишите свои эмоции:</legend>
+        <legend class="review-form__legend"><h3>Опишите свои эмоции:</h3></legend>
         <textarea class="review-content" name="content" id="content" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
@@ -125,16 +127,17 @@
     <b class="page-footer__social-hashtag">#VISITSEDONA</b>
     <ul class="page-footer__social-list">
       <li class="page-footer__social-item">
-        <span class="visually-hidden">Седона в Твиттере</span>
-        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"></a>
+
+        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"><span
+            class="visually-hidden">Седона в Твиттере</span></a>
       </li>
       <li class="page-footer__social-item">
-        <span class="visually-hidden">Седона в Фейсбуке</span>
-        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"></a>
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><span
+            class="visually-hidden">Седона в Фейсбуке</span></a>
       </li>
       <li class="page-footer__social-item">
-        <span class="visually-hidden">Седона в Ютубе</span>
-        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"></a>
+        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><span
+            class="visually-hidden">Седона в Ютубе</span></a>
       </li>
     </ul>
     <p class="copyright">Разработано
@@ -145,21 +148,17 @@
     </p>
   </footer>
 
-  <div class="default-modal">
-    <div class="default-modal default-modal--success">
-      <strong class="default-modal__head">Ваш отзыв отправлен!</strong>
-      <p class="default-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-        опубликуем его на сайте.</p>
-      <button class="button default-modal__button" type="button">Закрыть окно</button>
-    </div>
+  <div class="default-modal default-modal--success">
+    <strong class="default-modal__head">Ваш отзыв отправлен!</strong>
+    <p class="default-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+      опубликуем его на сайте.</p>
+    <button class="button default-modal__button" type="button">Закрыть окно</button>
   </div>
 
-  <div class="default-modal">
-    <div class="default-modal default-modal--failure">
-      <strong class="default-modal__head">Что-то пошло не так!</strong>
-      <p class="default-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button default-modal__button-short" type="button">OK</button>
-    </div>
+  <div class="default-modal default-modal--failure">
+    <strong class="default-modal__head">Что-то пошло не так!</strong>
+    <p class="default-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="button default-modal__button-short" type="button">OK</button>
   </div>
 
 </body>
