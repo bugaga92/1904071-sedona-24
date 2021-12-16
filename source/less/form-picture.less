@@ -1,14 +1,16 @@
-.main-picture {
+.form-picture__image {
+  display: block;
+  padding: 50px;
+  height: 155px;
   margin: 0 -20px;
   position: relative;
-  height: 390px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/catalog-mobile.jpg");
 }
 
-.main-picture::before {
+.form-picture__image::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -20,7 +22,7 @@
   border-left: 50vw solid #ffffff;
 }
 
-.main-picture::after {
+.form-picture__image::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -32,9 +34,21 @@
   border-right: 50vw solid #ffffff;
 }
 
-.main-picture__image {
-  width: 100%;
+.form-picture__head {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
   display: block;
-  margin: 0 auto;
-  padding: 90px 20px 0 20px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.form-picture__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }

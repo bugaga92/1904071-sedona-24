@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>form</title>
 </head>
 
@@ -32,7 +34,9 @@
     </nav>
     <section class="form-picture">
       <h1 class="visually-hidden">Страница отзыва</h1>
-      <div class="form-picture__image"></div>
+      <div class="form-picture__image">
+        <img src="/img/sedona.svg" width="320px" height="160px" alt="Sedona">
+      </div>
       <p class="form-picture__head">Оставьте свой отзыв</p>
       <p class="form-picture__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
@@ -43,7 +47,7 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form-name">
         <legend class="review-form__legend">
-          <h3>Представьтесь</h3>
+          <h3>Представьтесь:</h3>
         </legend>
         <ul class="form-name__list">
           <li class="form-name__item">
@@ -62,7 +66,9 @@
         </ul>
       </fieldset>
       <fieldset class="form-contacts">
-        <legend class="review-form__legend"><h3>Контактная информация</h3></legend>
+        <legend class="review-form__legend">
+          <h3>Контактная информация:</h3>
+        </legend>
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label for="phone" class="form-contacts__label">Контактный телефон*:</label>
@@ -77,7 +83,9 @@
         </ul>
       </fieldset>
       <fieldset class="form-mark">
-        <legend class="review-form__legend"><h3>Ваши общие впечатления:</h3></legend>
+        <legend class="review-form__legend">
+          <h3>Ваши общие впечатления:</h3>
+        </legend>
         <ul class="form-mark__list">
           <li class="form-mark__item">
             <input class="form-mark__selector" type="radio" name="good" id="good" value="bood" checked>
@@ -94,7 +102,9 @@
         </ul>
       </fieldset>
       <fieldset class="form-attractions">
-        <legend class="review-form__legend"><h3>Посещенные достопримечательности</h3></legend>
+        <legend class="review-form__legend">
+          <h3>Посещенные достопримечательности</h3>
+        </legend>
         <ul class="form-attractions__list">
           <li class="form-attractions__item">
             <input class="form-attractions__checker" type="checkbox" name="bridge" id="bridge" value="bridge" checked>
@@ -115,29 +125,30 @@
         </ul>
       </fieldset>
       <fieldset class="review-text">
-        <legend class="review-form__legend"><h3>Опишите свои эмоции:</h3></legend>
+        <legend class="review-form__legend">
+          <h3>Опишите свои эмоции:</h3>
+        </legend>
         <textarea class="review-content" name="content" id="content" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="button review-form__button" type="submit">Отправить отзыв</button>
-      <span class="review-form__button__ required">* — обязательные поля</span>
+      <span class="review-form__button__ required visually-hidden">* — обязательные поля</span>
     </form>
   </section>
   <footer class="page__footer page-footer">
     <b class="page-footer__social-hashtag">#VISITSEDONA</b>
     <ul class="page-footer__social-list">
       <li class="page-footer__social-item">
-
-        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"><span
-            class="visually-hidden">Седона в Твиттере</span></a>
+        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"><img src="img/icon-twitter.svg"
+            alt="Твиттер"></a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><span
-            class="visually-hidden">Седона в Фейсбуке</span></a>
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><img src="img/icon-facebook.svg"
+            alt="Фейсбук"></a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><span
-            class="visually-hidden">Седона в Ютубе</span></a>
+        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><img src="img/icon-youtube.svg"
+            alt="Ютуб"></a>
       </li>
     </ul>
     <p class="copyright">Разработано
