@@ -1,11 +1,17 @@
 .main-picture {
-  margin: 0 -20px;
+  display: block;
   position: relative;
-  height: 390px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 -20px;
+  height: 390px;
   background-image: url("../img/back-mobile.jpg");
+}
+
+.main-picture--inner {
+  height: 155px;
+  background-image: url("../img/catalog-mobile.jpg");
 }
 
 .main-picture::before {
@@ -17,7 +23,7 @@
   border: 25px solid transparent;
   border-bottom: 0 solid transparent;
   border-right: 0 solid transparent;
-  border-left: 50vw solid #ffffff;
+  border-left: 50vw solid @white;
 }
 
 .main-picture::after {
@@ -29,12 +35,16 @@
   border: 25px solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
-  border-right: 50vw solid #ffffff;
+  border-right: 50vw solid @white;
 }
 
 .main-picture__image {
-  width: 100%;
+  width: 282px;
   display: block;
   margin: 0 auto;
   padding: 90px 20px 0 20px;
+}
+
+.main-picture__image-inner {
+  padding-top: 40px;
 }

@@ -32,17 +32,17 @@
         </ul>
       </div>
     </nav>
-    <section class="form-picture">
+    <section class="main-picture main-picture--inner">
       <h1 class="visually-hidden">Страница отзыва</h1>
-      <div class="form-picture__image">
-        <img src="/img/sedona.svg" width="320px" height="160px" alt="Sedona">
+      <div class="main-picture__image main-picture__image-inner">
+        <img src="/img/sedona.svg" width="320" height="155" alt="Sedona">
       </div>
-      <p class="form-picture__head">Оставьте свой отзыв</p>
-      <p class="form-picture__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
     </section>
   </header>
   <section class="review-form">
+    <p class="review-form__head">Оставьте свой отзыв</p>
+    <p class="review-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
     <h2 class="visually-hidden">Форма для отзыва</h2>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form-name">
@@ -128,11 +128,11 @@
         <legend class="review-form__legend">
           <h3>Опишите свои эмоции:</h3>
         </legend>
-        <textarea class="review-content" name="content" id="content" cols="30" rows="10"
+        <textarea class="review-text__content" name="content" id="content" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="button review-form__button" type="submit">Отправить отзыв</button>
-      <span class="review-form__button__ required visually-hidden">* — обязательные поля</span>
+      <span class="review-form__required visually-hidden">* — обязательные поля</span>
     </form>
   </section>
   <footer class="page__footer page-footer">
