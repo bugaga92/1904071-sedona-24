@@ -17,8 +17,8 @@
       <button class="main-nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
@@ -35,7 +35,7 @@
     <section class="main-picture">
       <h1 class="visually-hidden">Курорт Седона</h1>
       <div class="main-picture__image">
-        <img src="/img/text-index.svg" width="320" height="390" alt="Welcome to the gorgeous Sedona">
+        <img class="main-picture__img" src="/img/text-index.svg" width="320" height="390" alt="Welcome to the gorgeous Sedona">
       </div>
     </section>
   </header>
@@ -46,10 +46,15 @@
         <p class="advantages__head">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages__list">
-          <li class="advantages__item advantages__item--solid">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="advantages__image" src="img/photo-city@1x1.jpg" width="320" height="260" alt="Седона-фото">
+          <li class="advantages__item">
+            <div class="advantages__container advantages__item--solid">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="advantages__image advantages__image--small" src="img/photo-city@1x1.jpg" width="320"
+              height="260" alt="Седона-фото">
+            <img class="advantages__image advantages__image--medium" src="img/photo-city.jpg" width="512" height="256"
+              alt="Седона-фото">
             <ul class="features">
               <li class="features__item features__item--apartment">
                 <h4 class="features__title">Жилье</h4>
@@ -65,23 +70,33 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item advantages__item--solid">
-            <h3 class="advantages__title advantages__title--image">Там есть мост дьявола</h3>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__image advantages__image--two" src="img/photo-bridge@1x1.jpg" width="520"
+          <li class="advantages__item">
+            <div class="advantages__container advantages__item--solid advantages__container--reverse">
+              <h3 class="advantages__title advantages__title--image">Там есть мост дьявола</h3>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="advantages__image advantages__image--small" src="img/photo-bridge@1x1.jpg" width="320"
               height="260" alt="Мост дьявола">
+            <img class="advantages__image advantages__image--medium" src="img/photo-bridge.jpg" width="512" height="256"
+              alt="Мост дьявола">
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          <li class="advantages__item advantages__item--inner">
+            <div class="advantages__container">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <p class="advantages__description">Все интересные места находятся очень близко</p>
+            </div>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <li class="advantages__item advantages__item--inner">
+            <div class="advantages__container">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </div>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+          <li class="advantages__item advantages__item--inner">
+            <div class="advantages__container">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </li>
         </ol>
       </div>
@@ -101,17 +116,14 @@
   <footer class="page__footer page-footer">
     <b class="page-footer__social-hashtag">#VISITSEDONA</b>
     <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--tvitter" href="#"><img src="img/icon-twitter.svg"
-            alt="Твиттер"></a>
+      <li class="page-footer__social-item page-footer__social-link--twitter">
+        <a class="page-footer__social-link" href="#"></a>
       </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><img src="img/icon-facebook.svg"
-            alt="Фейсбук"></a>
+      <li class="page-footer__social-item page-footer__social-link--facebook">
+        <a class="page-footer__social-link" href="#"></a>
       </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><img src="img/icon-youtube.svg"
-            alt="Ютуб"></a>
+      <li class="page-footer__social-item page-footer__social-link--youtube">
+        <a class="page-footer__social-link " href="#"></a>
       </li>
     </ul>
     <p class="copyright">Разработано

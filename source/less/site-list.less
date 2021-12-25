@@ -9,3 +9,28 @@
     text-decoration: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    .site-list__item {
+      flex-basis: 25%;
+
+      &:nth-child(2) {
+        text-align: left;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+
+    .site-list__link {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    .site-list__link--active {
+      color: @brown;
+    }
+  }
+}

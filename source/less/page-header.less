@@ -1,3 +1,14 @@
 .page-header {
   background-color: @white;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .page-header__logo {
+      position: absolute;
+      right: 50%;
+      margin-right: -51px;
+      z-index: 10;
+    }
+  }
+}
