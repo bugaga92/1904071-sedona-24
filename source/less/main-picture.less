@@ -12,6 +12,7 @@
 .main-picture--inner {
   height: 155px;
   background-image: url("../img/catalog-mobile.jpg");
+  padding-top: 50px;
 }
 
 .main-picture::before {
@@ -46,7 +47,7 @@
 }
 
 .main-picture__image-inner {
-  padding-top: 40px;
+  padding-top: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,16 +57,135 @@
     background-image: url("../img/back-desktop.jpg");
   }
 
+  .main-picture--inner {
+    height: 290px;
+    background-image: url("../img/catalog-mobile.jpg");
+  }
+
+  .main-picture::before {
+    left: 4.43vw;
+    border: 57px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 45.57vw solid @white;
+  }
+
+  .main-picture::after {
+    right: 4.43vw;
+    border: 57px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 45.57vw solid @white;
+  }
+
+
   .main-picture__image {
     padding: 0;
-    height: 461px;
     width: auto;
   }
 
   .main-picture__img {
     padding: 0;
-    margin: 77px 0 0 0;
-    height: 350px;
-    width: 461px;
+    margin-top: 95px;
+    width: 460px;
+  }
+
+  .main-picture__decor {
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: -50vw;
+    right: -50vw;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      border: 80px solid transparent;
+      border-bottom: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-left: 100vw solid @white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      border: 80px solid transparent;
+      border-bottom: 0 solid transparent;
+      border-left: 0 solid transparent;
+      border-right: 100vw solid @white;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-picture {
+    padding: 0;
+    height: 518px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+
+  .main-picture--inner {
+    height: 300px;
+    padding: 0;
+    background-image: url("../img/catalog-mobile.jpg");
+  }
+
+  .main-picture::before {
+    left: 20.83vw;
+    border: 57px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 29.17vw solid @white;
+  }
+
+  .main-picture::after {
+    right: 20.83vw;
+    border: 57px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 29.17vw solid @white;
+  }
+
+  .main-picture__image {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .main-picture__img {
+    padding: 0;
+    margin-top: 75px;
+  }
+
+  .main-picture__decor {
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: -50vw;
+    right: -50vw;
+
+    &::before {
+      bottom: 0;
+      left: 0;
+      border: 115px solid transparent;
+      border-bottom: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-left: 100vw solid @white;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      border: 115px solid transparent;
+      border-bottom: 0 solid transparent;
+      border-left: 0 solid transparent;
+      border-right: 100vw solid @white;
+    }
   }
 }

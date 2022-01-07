@@ -14,7 +14,7 @@
       <img src="img/logotype-mobile.svg" alt="Логотип Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -35,8 +35,10 @@
     <section class="main-picture">
       <h1 class="visually-hidden">Курорт Седона</h1>
       <div class="main-picture__image">
-        <img class="main-picture__img" src="/img/text-index.svg" width="320" height="390" alt="Welcome to the gorgeous Sedona">
+        <img class="main-picture__img" src="/img/text-index.svg" width="320" height="390"
+          alt="Welcome to the gorgeous Sedona">
       </div>
+      <div class="main-picture__decor"></div>
     </section>
   </header>
   <main class="page__main">
@@ -47,7 +49,7 @@
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__container advantages__item--solid">
+            <div class="advantages__container advantages__container--solid">
               <h3 class="advantages__title">Настоящий городок</h3>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
@@ -71,7 +73,7 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__container advantages__item--solid advantages__container--reverse">
+            <div class="advantages__container advantages__container--solid advantages__container--reverse">
               <h3 class="advantages__title advantages__title--image">Там есть мост дьявола</h3>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
@@ -104,7 +106,7 @@
     <section class="search">
       <h2 class="visually-hidden">Поиск</h2>
       <p class="search__head">Заинтересовались?</p>
-      <p class="search__text">Укажите предполагаемые даты поездки и мы покажем лучшие предложения гостиниц в Седоне</p>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
       <a class="button search__button" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
@@ -116,14 +118,17 @@
   <footer class="page__footer page-footer">
     <b class="page-footer__social-hashtag">#VISITSEDONA</b>
     <ul class="page-footer__social-list">
-      <li class="page-footer__social-item page-footer__social-link--twitter">
-        <a class="page-footer__social-link" href="#"></a>
+      <li class="page-footer__social-item page-footer__social-item--twitter">
+        <a class="page-footer__social-link" href="#"><span class="visually-hidden">Мы в Твиттере</span>
+          <img src="img/icon-twitter.svg" alt="Логотип Twitter"></a>
       </li>
-      <li class="page-footer__social-item page-footer__social-link--facebook">
-        <a class="page-footer__social-link" href="#"></a>
+      <li class="page-footer__social-item page-footer__social-item--facebook">
+        <a class="page-footer__social-link" href="#"><span class="visually-hidden">Мы на Фейсбук</span>
+          <img src="img/icon-facebook.svg" alt="Логотип Facebook"></a>
       </li>
-      <li class="page-footer__social-item page-footer__social-link--youtube">
-        <a class="page-footer__social-link " href="#"></a>
+      <li class="page-footer__social-item page-footer__social-item--youtube">
+        <a class="page-footer__social-link " href="#"><span class="visually-hidden">Мы на Ютубе</span>
+          <img src="img/icon-youtube.svg" alt="Логотип You-Tube"></a>
       </li>
     </ul>
     <p class="copyright">Разработано
