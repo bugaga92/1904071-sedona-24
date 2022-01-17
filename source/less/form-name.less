@@ -60,6 +60,15 @@
   line-height: 26px;
   padding: 0 25px;
   border: 0;
+
+  &:hover {
+    background-color: @bordercolorlight;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid @bordercolorlight;
+  }
 }
 
 .form-name__surname {
@@ -73,6 +82,15 @@
   line-height: 26px;
   padding: 0 25px;
   border: 0;
+
+  &:hover {
+    background-color: @bordercolorlight;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid @bordercolorlight;
+  }
 }
 
 .form-name__second-name {
@@ -86,6 +104,15 @@
   line-height: 26px;
   padding: 0 25px;
   border: 0;
+
+  &:hover {
+    background-color: @bordercolorlight;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid @bordercolorlight;
+  }
 }
 
 
@@ -95,15 +122,33 @@
     margin: 0;
     padding: 0;
     border-bottom: 0;
+    font-size: 18px;
+  }
+
+  .form-name__name {
+    width: 216px;
+  }
+
+  .form-name__surname {
+    width: 180px;
+  }
+
+  .form-name__second-name {
+    width: 180px;
+  }
+
+  .form-name__legend {
+    text-align: left;
   }
 
   .form-name__legend h3 {
-    margin: 0;
+    margin: 0 0 0 55px;
+    font-size: 21px;
   }
 
   .form-name__list {
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 0;
     text-align: right;
   }

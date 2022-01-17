@@ -7,6 +7,9 @@
 
 .features__item--apartment {
   padding-top: 25px;
+  background: url("/img/icon-house.svg") no-repeat;
+  background-position: 7% 22%;
+  background-size: 36px 38px;
 }
 
 .features__title {
@@ -17,6 +20,12 @@
   padding-left: 70px;
   padding-bottom: 15px;
   margin: 0;
+}
+
+.features__item--souvenirs {
+  background: url("/img/icon-gift.svg") no-repeat;
+  background-position: 7% 2%;
+  background-size: 36px 38px;
 }
 
 .features__description {
@@ -30,20 +39,51 @@
 
 .features__item--food {
   padding-bottom: 15px;
+  background: url("/img/icon-burger.svg") no-repeat;
+  background-position: 7% 7%;
+  background-size: 36px 38px;
 }
-
 
 @media (min-width: @tablet-width) {
   .features {
     display: flex;
     flex-direction: row;
     flex: 0 1 100%;
-    padding: 20px;
 
     .features__item {
       padding: 20px;
       text-align: center;
       flex: 1 1 33.33%;
+    }
+
+    .features__item--apartment {
+      background-position: 50% 20%;
+      background-size: 75px 72px;
+    }
+
+    .features__item--souvenirs {
+      order: 3;
+      background-position: 50% 20%;
+      background-size: 75px 72px;
+    }
+
+    .features__item--food {
+      background-position: 50% 20%;
+      background-size: 75px 72px;
+    }
+
+    .features__title {
+      font-size: 21px;
+      line-height: 21px;
+      padding-top: 115px;
+      margin: 0;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .features__description {
+      text-align: center;
+      padding: 15px 9px;
     }
   }
 }

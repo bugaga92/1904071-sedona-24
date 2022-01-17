@@ -6,6 +6,7 @@
   border-right: 0;
   border-bottom: 1px solid @bordercolorlight;
   flex: 1 1 100%;
+  text-align: left;
 }
 
 .form-attaractions__legend {
@@ -14,7 +15,8 @@
   line-height: 26px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 0 36px 0;
+  text-align: center;
 }
 
 .form-attaractions__legend h3 {
@@ -34,7 +36,7 @@
 
 .form-attractions__item {
   flex: 1 1 100%;
-  margin-bottom: 20px;
+  margin-bottom: 54px;
 
   &:last-child {
     margin-bottom: 25px;
@@ -42,21 +44,73 @@
 }
 
 .form-attractions__checker {
-  display: inline-block;
-  height: 46px;
-  width: 46px;
+  display: none;
+  height: 56px;
+  width: 56px;
   vertical-align: middle;
   margin: 0;
+  cursor: pointer;
+}
+
+.form-attractions__checker:checked {
+  +label {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .form-attractions__label {
   display: inline-block;
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-left: 20px;
+  padding-left: 78px;
   margin: 0;
   border: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -13px;
+    width: 56px;
+    height: 56px;
+    border: 4px solid @grey;
+    background-color: @grey;
+    border-radius: 5px;
+  }
+
+  &:hover::before {
+    background-color: @bordercolorlight;
+    border-color: @bordercolorlight;
+  }
+
+  &:active::before {
+    background-color: @deepgrey;
+    border-color: @deepgrey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+    left: 17px;
+    top: 6px;
+    width: 21px;
+    height: 13px;
+    border-radius: 1px;
+    border-left: 4px solid @black;
+    border-bottom: 4px solid @black;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -78,7 +132,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 44px 100px 70px 100px;
+    margin: 10px 25px 55px 95px;
   }
 
   .form-attractions__item {

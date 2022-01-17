@@ -90,15 +90,15 @@
         </legend>
         <ul class="form-mark__list">
           <li class="form-mark__item">
-            <input class="form-mark__selector" type="radio" name="good" id="good" value="bood" checked>
+            <input class="form-mark__selector" type="radio" name="mark" id="good" value="good" checked>
             <label for="good" class="form-mark__label">Скорее положительное</label>
           </li>
           <li class="form-mark__item">
-            <input class="form-mark__selector" type="radio" name="bad" id="bad" value="bad">
+            <input class="form-mark__selector" type="radio" name="mark" id="bad" value="bad">
             <label for="bad" class="form-mark__label">Скорее отрицательное</label>
           </li>
           <li class="form-mark__item">
-            <input class="form-mark__selector" type="radio" name="neutral" id="neutral" value="neutral">
+            <input class="form-mark__selector" type="radio" name="mark" id="neutral" value="neutral">
             <label for="neutral" class="form-mark__label">Затрудняюсь ответить</label>
           </li>
         </ul>
@@ -133,7 +133,7 @@
         <textarea class="review-text__content" name="content" id="content" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="button review-form__button" type="submit">Отправить отзыв</button>
+      <button class="button review-form__button" type="submit"><span class="button__text">Отправить отзыв</span></button>
       <span class="review-form__required visually-off">* — обязательные поля</span>
     </form>
   </section>
@@ -165,17 +165,19 @@
     <strong class="default-modal__head">Ваш отзыв отправлен!</strong>
     <p class="default-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
       опубликуем его на сайте.</p>
-      <div class="default-modal__button-container">
-    <button class="button default-modal__button" type="button">Закрыть окно</button>
-  </div>
+    <div class="default-modal__button-container">
+      <button class="button default-modal__button" type="button"><span class="button__text">Закрыть окно</span></button>
+    </div>
   </div>
 
   <div class="default-modal default-modal--failure">
     <strong class="default-modal__head">Что-то пошло не так!</strong>
     <p class="default-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button default-modal__button-short" type="button">OK</button>
+    <button class="button default-modal__button-short" type="button"><span class="button__text">OK</span></button>
   </div>
 
 </body>
+
+<script src="js/menutoggle.js"></script>
 
 </html>
