@@ -74,13 +74,17 @@
           <li class="form-contacts__item">
             <label for="phone" class="form-contacts__label">Контактный телефон*:</label>
             <label for="phone" class="form-contacts__label form-contacts__label--off">Телефон*:</label>
-            <input class="form-contacts__phone" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-              required>
+            <div class="form-contacts__wrapper-phone">
+              <input class="form-contacts__phone" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                required>
+            </div>
           </li>
           <li class="form-contacts__item">
             <label for="email" class="form-contacts__mail">Электронная почта*:</label>
-            <input class="form-contacts__email" type="email" name="email" id="email" placeholder="Введите e-mail"
-              required>
+            <div class="form-contacts__wrapper-email">
+              <input class="form-contacts__email" type="email" name="email" id="email" placeholder="Введите e-mail"
+                required>
+            </div>
           </li>
         </ul>
       </fieldset>
@@ -133,7 +137,8 @@
         <textarea class="review-text__content" name="content" id="content" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="button review-form__button" type="submit"><span class="button__text">Отправить отзыв</span></button>
+      <button class="button review-form__button" type="submit"><span class="button__text">Отправить
+          отзыв</span></button>
       <span class="review-form__required visually-off">* — обязательные поля</span>
     </form>
   </section>
