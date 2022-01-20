@@ -16,28 +16,17 @@
   padding-top: 50px;
 }
 
-.main-picture::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  border: 25px solid transparent;
-  border-bottom: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-left: 50vw solid @white;
-}
-
 .main-picture::after {
   content: "";
   position: absolute;
+  background-image: url("/img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
   bottom: 0;
-  right: 0;
+  left: 0;
   display: block;
-  border: 25px solid transparent;
-  border-bottom: 0 solid transparent;
-  border-left: 0 solid transparent;
-  border-right: 50vw solid @white;
+  width: 100%;
+  height: 57px;
 }
 
 .main-picture__image {
@@ -64,23 +53,6 @@
     background-image: url("../img/catalog-mobile.jpg");
   }
 
-  .main-picture::before {
-    left: 4.43vw;
-    border: 57px solid transparent;
-    border-bottom: 0 solid transparent;
-    border-right: 0 solid transparent;
-    border-left: 45.57vw solid @white;
-  }
-
-  .main-picture::after {
-    right: 4.43vw;
-    border: 57px solid transparent;
-    border-bottom: 0 solid transparent;
-    border-left: 0 solid transparent;
-    border-right: 45.57vw solid @white;
-  }
-
-
   .main-picture__image {
     padding: 0;
     width: auto;
@@ -90,38 +62,6 @@
     padding: 0;
     margin-top: 95px;
     width: 460px;
-  }
-
-  .main-picture__decor {
-    height: 57px;
-    position: absolute;
-    bottom: 0;
-    left: -50vw;
-    right: -50vw;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      border: 80px solid transparent;
-      border-bottom: 0 solid transparent;
-      border-right: 0 solid transparent;
-      border-left: 100vw solid @white;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      display: block;
-      border: 80px solid transparent;
-      border-bottom: 0 solid transparent;
-      border-left: 0 solid transparent;
-      border-right: 100vw solid @white;
-    }
   }
 }
 
@@ -138,22 +78,6 @@
     background-image: url("../img/catalog-mobile.jpg");
   }
 
-  .main-picture::before {
-    left: 20.83vw;
-    border: 57px solid transparent;
-    border-bottom: 0 solid transparent;
-    border-right: 0 solid transparent;
-    border-left: 29.17vw solid @white;
-  }
-
-  .main-picture::after {
-    right: 20.83vw;
-    border: 57px solid transparent;
-    border-bottom: 0 solid transparent;
-    border-left: 0 solid transparent;
-    border-right: 29.17vw solid @white;
-  }
-
   .main-picture__image {
     padding: 0;
     width: auto;
@@ -163,31 +87,5 @@
   .main-picture__img {
     padding: 0;
     margin-top: 75px;
-  }
-
-  .main-picture__decor {
-    height: 57px;
-    position: absolute;
-    bottom: 0;
-    left: -50vw;
-    right: -50vw;
-
-    &::before {
-      bottom: 0;
-      left: 0;
-      border: 115px solid transparent;
-      border-bottom: 0 solid transparent;
-      border-right: 0 solid transparent;
-      border-left: 100vw solid @white;
-    }
-
-    &::after {
-      bottom: 0;
-      right: 0;
-      border: 115px solid transparent;
-      border-bottom: 0 solid transparent;
-      border-left: 0 solid transparent;
-      border-right: 100vw solid @white;
-    }
   }
 }
