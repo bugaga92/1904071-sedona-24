@@ -1,14 +1,20 @@
 .page-header {
   background-color: @white;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     position: absolute;
     transform: translateX(-50%);
-    resize: vertical;
-    overflow: auto;
-    z-index: 10;
+    left: 50%;
   }
 }
 

@@ -6,12 +6,14 @@
   border-right: 0;
   border-bottom: 1px solid @bordercolorlight;
   flex: 1 1 100%;
+  text-align: left;
 }
 
 .form-mark__legend {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -21,7 +23,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 0 40px 0;
   border: 0;
 }
 
@@ -33,26 +35,75 @@
 }
 
 .form-mark__item {
-  margin-bottom: 20px;
+  margin-bottom: 43px;
   flex: 1 1 100%;
 }
 
 .form-mark__label {
   display: inline-block;
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-left: 17px;
+  padding-left: 78px;
   border: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: -11px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: @grey;
+    border-radius: 100%;
+  }
+
+  &:hover::before {
+    background-color: @bordercolorlight;
+  }
+
+  &:active::before {
+    background-color: @deepgrey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+    left: 22px;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: @black;
+    opacity: 0;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .form-mark__selector {
-  display: inline-block;
+  display: none;
+  position: relative;
   height: 48px;
   width: 48px;
   vertical-align: middle;
   text-align: left;
   margin: 0;
+  cursor: pointer;
+}
+
+.form-mark__selector:checked {
+  +label {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,13 +117,34 @@
     border-bottom: 0;
   }
 
+
   .form-mark__list {
     text-align: left;
-    margin-top: 50px;
+    margin-top: 25px;
   }
+
 
   .form-mark__item:last-child {
     margin-bottom: 0;
+  }
+
+  .form-mark__legend {
+    text-align: left;
+  }
+
+  .form-mark__legend h3 {
+    font-size: 21px;
+  }
+
+  .form-mark__label {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 78px;
+    border: 0;
+    cursor: pointer;
   }
 }
 

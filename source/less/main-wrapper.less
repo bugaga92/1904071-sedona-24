@@ -1,6 +1,19 @@
+.main-wrapper {
+  display: none;
+}
+
+.main-nav--nojs .main-wrapper {
+  display: block;
+}
+
+.main-nav__opened .main-wrapper {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .main-wrapper {
     margin: 0 auto;
     height: 100%;
+    display: block;
   }
 }
