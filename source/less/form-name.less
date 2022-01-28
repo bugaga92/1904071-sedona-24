@@ -1,9 +1,9 @@
 .form-name {
   margin: 0;
   padding: 0;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 1px solid @bordercolorlight;
   flex: 1 1 100%;
 }
@@ -14,26 +14,27 @@
   line-height: 26px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 2px;
 }
 
 .form-name__legend h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 24px 0 0 0;
+  margin: 20px 0 0 0;
   border: 0;
 }
 
 .form-name__list {
   list-style: none;
   text-align: left;
-  margin: 26px 0;
+  margin-top: 20px;
+  margin-left: 20px;
   padding: 0;
 }
 
 .form-name__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   &:last-child {
     margin-bottom: 25px;
@@ -56,9 +57,10 @@
   background-color: @grey;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 0 25px;
+  margin-left: 8px;
+  padding-left: 23px;
   border: 0;
 
   &:hover {
@@ -68,6 +70,7 @@
   &:active {
     background-color: @white;
     border: 4px solid @bordercolorlight;
+    padding-left: 21px;
   }
 }
 
@@ -78,9 +81,10 @@
   background-color: @grey;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 0 25px;
+  margin-left: 8px;
+  padding-left: 23px;
   border: 0;
 
   &:hover {
@@ -90,6 +94,7 @@
   &:active {
     background-color: @white;
     border: 4px solid @bordercolorlight;
+    padding-left: 21px;
   }
 }
 
@@ -100,9 +105,10 @@
   background-color: @grey;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 0 25px;
+  margin-left: 12px;
+  padding-left: 23px;
   border: 0;
 
   &:hover {
@@ -112,6 +118,7 @@
   &:active {
     background-color: @white;
     border: 4px solid @bordercolorlight;
+    padding-left: 21px;
   }
 }
 
@@ -125,8 +132,15 @@
     font-size: 18px;
   }
 
+  .form-name__item {
+    margin-bottom: 20px;
+  }
+
   .form-name__name {
     width: 216px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-top: 8px;
   }
 
   .form-name__surname {
@@ -142,7 +156,7 @@
   }
 
   .form-name__legend h3 {
-    margin: 0 0 0 55px;
+    margin: 0 0 0 56px;
     font-size: 21px;
   }
 
@@ -158,21 +172,26 @@
   }
 
   .form-name__label {
-    margin-right: 13px;
+    margin-right: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-name {
-    margin-top: 65px;
+    margin-top: 59px;
   }
 
   .form-name__legend {
-    margin-left: 60px;
+    margin-left: 24px;
   }
 
   .form-name__legend h3 {
     font-size: 21px;
+  }
+
+  .form-name__list {
+    text-align: center;
+    margin-left: 80px;
   }
 
   .form-name__name {

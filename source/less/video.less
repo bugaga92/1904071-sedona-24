@@ -1,8 +1,8 @@
 .video {
   clear: both;
   text-transform: uppercase;
-  padding-top: 60px;
-  margin: 0 -20px;
+  padding-top: 32px;
+  margin: 0 -20px 140px;
 }
 
 .video__head {
@@ -16,8 +16,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  padding-top: 15px;
-  padding-bottom: 35px;
+  padding: 28px 22px 35px;
   margin: 0;
 }
 
@@ -34,7 +33,7 @@
   margin: 0 20px;
   position: absolute;
   overflow: auto;
-  bottom: -63px;
+  bottom: -62px;
 }
 
 .video__range-control {
@@ -42,7 +41,7 @@
   width: 280px;
   height: 45px;
   margin: 0 20px;
-  bottom: 0;
+  bottom: 2px;
   background-color: @black;
   opacity: 0.6;
 }
@@ -70,7 +69,7 @@
   left: 58px;
 }
 
-.video__buttons-control--replay {
+.video__button-replay {
   border: none;
   position: relative;
   top: 23px;
@@ -78,7 +77,11 @@
   z-index: 20;
 }
 
-.video__buttons-control--subtitles {
+.video__icon-replay {
+  fill: @playergrey;
+}
+
+.video__button-subtitles {
   border: none;
   position: relative;
   top: 23px;
@@ -86,7 +89,11 @@
   z-index: 20;
 }
 
-.video__buttons-control--full-screen {
+.video__icon-subtitles {
+  fill: @playergrey;
+}
+
+.video__button-full-screen {
   border: none;
   position: relative;
   top: 23px;
@@ -94,47 +101,68 @@
   z-index: 20;
 }
 
-.video__buttons-control--replay:hover {
-  .video__buttons-control--color {
+.video__icon-full-screen {
+  fill: @playergrey;
+}
+
+.video__button-replay:hover {
+  .video__icon-replay {
     fill: @lightblack;
   }
 }
 
-.video__buttons-control--replay:active {
-  .video__buttons-control--color {
-    fill: rgba(51, 51, 51, 0.3);
+.video__button-replay:active {
+  .video__icon-replay {
+    fill: @activeplayermob;
   }
 }
 
-.video__buttons-control--subtitles:hover {
-  .video__buttons-control--color {
+.video__button-subtitles:hover {
+  .video__icon-subtitles {
     fill: @lightblack;
   }
 }
 
-.video__buttons-control--subtitles:active {
-  .video__buttons-control--color {
-    fill: rgba(51, 51, 51, 0.3);
+.video__button-subtitles:active {
+  .video__icon-subtitles {
+    fill: @activeplayermob;
   }
 }
 
-.video__buttons-control--full-screen:hover {
-  .video__buttons-control--color {
+.video__button-full-screen:hover {
+  .video__icon-full-screen {
     fill: @lightblack;
   }
 }
 
-.video__buttons-control--full-screen:active {
-  .video__buttons-control--color {
-    fill: rgba(51, 51, 51, 0.3);
+.video__button-full-screen:active {
+  .video__icon-full-screen {
+    fill: @activeplayermob;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    margin-top: 57px;
+    margin-bottom: 38px;
+    padding-top: 0;
+  }
+
+  .video__head {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .video__text {
+    padding: 32px 155px 35px;
+  }
+
   .video__player {
     position: relative;
     width: 648px;
-    margin: 0 auto;
+    margin: 45px auto 0;
   }
 
   .video__picture {
@@ -148,7 +176,7 @@
     position: absolute;
     overflow: auto;
     z-index: 10;
-    bottom: 0;
+    bottom: 3px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -171,83 +199,105 @@
     bottom: 0;
   }
 
-  .video__buttons-control--replay {
-    background: none;
+  .video__button-replay {
+    background: transparent;
     position: absolute;
-    left: 35px;
+    left: 30px;
     top: 50%;
     margin-top: -12px;
   }
 
-  .video__buttons-control--subtitles {
-    background: none;
+  .video__icon-replay {
+    fill: @white;
+  }
+
+  .video__button-subtitles {
+    background: transparent;
     position: absolute;
-    left: 524px;
+    left: 518px;
     top: 50%;
     margin-top: -12px;
   }
 
-  .video__buttons-control--full-screen {
-    background: none;
+  .video__icon-subtitles {
+    fill: @white;
+  }
+
+  .video__button-full-screen {
+    background: transparent;
     position: absolute;
-    left: 587px;
+    left: 580px;
     top: 50%;
     margin-top: -12px;
   }
 
-  .video__buttons-control--color {
-    fill: rgba(255, 255, 255, 1);
+  .video__icon-full-screen {
+    fill: @white;
   }
 
   .video__range {
     width: 100%;
     top: 22px;
-    left: 0;
+    left: -20px;
   }
 
-  .video__buttons-control--replay:hover {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.6);
+  .video__button-replay:hover {
+    .video__icon-replay {
+      fill: @playerhovertablet;
     }
   }
 
-  .video__buttons-control--replay:active {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.3);
+  .video__button-replay:active {
+    .video__icon-replay {
+      fill: @playeractivetablet;
     }
   }
 
-  .video__buttons-control--subtitles:hover {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.6);
+  .video__button-subtitles:hover {
+    .video__icon-subtitles {
+      fill: @playerhovertablet;
     }
   }
 
-  .video__buttons-control--subtitles:active {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.3);
+  .video__button-subtitles:active {
+    .video__icon-subtitles {
+      fill: @playeractivetablet;
     }
   }
 
-  .video__buttons-control--full-screen:hover {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.6);
+  .video__button-full-screen:hover {
+    .video__icon-full-screen {
+      fill: @playerhovertablet;
     }
   }
 
-  .video__buttons-control--full-screen:active {
-    .video__buttons-control--color {
-      fill: rgba(255, 255, 255, 0.3);
+  .video__button-full-screen:active {
+    .video__icon-full-screen {
+      fill: @playeractivetablet;
     }
+  }
+
+  .video__toggle {
+    left: 95px;
   }
 
   @media (min-width: @desktop-width) {
+    .video {
+      margin-top: 60px;
+      margin-bottom: 84px;
+    }
+
     .video__head {
       font-size: 30px;
     }
 
+    .video__text {
+      padding: 32px 370px 35px;
+    }
+
     .video__player {
       width: 800px;
+      margin-top: 43px;
     }
 
     .video__picture {
@@ -266,12 +316,12 @@
       width: 800px;
     }
 
-    .video__buttons-control--subtitles {
-      left: 675px;
+    .video__button-subtitles {
+      left: 670px;
     }
 
-    .video__buttons-control--full-screen {
-      left: 740px;
+    .video__button-full-screen {
+      left: 733px;
     }
   }
 }

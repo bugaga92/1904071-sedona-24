@@ -4,12 +4,13 @@
   line-height: 26px;
   font-weight: 400;
   color: @black;
-  margin: 45px 0;
+  margin: 42px 0 0;
 }
 
 .copyright__logo {
   vertical-align: middle;
   margin-left: 10px;
+  fill: @black;
 }
 
 .copyright__link:hover {
@@ -20,7 +21,12 @@
 
 .copyright__link:active {
   .copyright__logo {
-    fill: @black;
-    opacity: 30%;
+    fill: @logoactive;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
   }
 }
