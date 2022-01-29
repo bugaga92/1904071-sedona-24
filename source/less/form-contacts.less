@@ -1,10 +1,9 @@
 .form-contacts {
   flex: 1 1 100%;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  border: none;
   border-bottom: 1px solid @bordercolorlight;
-  margin: 22px 0 0 0;
+  margin-top: 19px;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -14,7 +13,8 @@
   line-height: 26px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  text-align: left;
+  margin-left: 21px;
 }
 
 .form-contacts__legend h3 {
@@ -30,6 +30,7 @@
   text-align: left;
   padding: 0;
   margin-top: 17px;
+  margin-right: 20px;
 }
 
 .form-contacts__label {
@@ -38,7 +39,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 0 22px;
+  margin-left: 22px;
 }
 
 .form-contacts__mail {
@@ -47,7 +48,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 14px 0 0 22px;
+  margin-top: 13px;
+  margin-left: 21px;
 }
 
 .form-contacts__phone {
@@ -57,10 +59,10 @@
   background-color: @grey;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   padding: 0 20px;
-  margin-top: 8px;
+  margin-top: 11px;
   border: 0;
 }
 
@@ -71,11 +73,12 @@
   background-color: @grey;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   padding: 0 20px;
   border: 0;
-  margin: 5px 0 8px 0;
+  margin-top: 7px;
+  margin-bottom: 10px;
 }
 
 .form-contacts__label--off {
@@ -94,13 +97,14 @@
   &::before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 10px;
     right: 0;
     width: 58px;
     height: 58px;
     border: 1px solid @verydeepgrey;
     background: url("/img/icon-phone.svg") no-repeat center;
     background-color: @verydeepgrey;
+    background-position-x: 22px;
   }
 }
 
@@ -112,25 +116,29 @@
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 7px;
     right: 0;
     width: 58px;
     height: 58px;
     border: 1px solid @verydeepgrey;
     background: url("/img/icon-mail.svg") no-repeat center;
     background-color: @verydeepgrey;
+    background-position-x: 22px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form-contacts {
     border-top: 1px solid @bordercolor;
-    margin-top: 73px;
+    margin-top: 70px;
+    margin-left: 0;
     border-bottom: 0;
   }
 
   .form-contacts__legend {
+    margin-left: 0;
     padding: 0 63px;
+    text-align: center;
   }
 
   .form-contacts__legend h3 {
@@ -140,7 +148,7 @@
 
   .form-contacts__list {
     flex: 1 1 100%;
-    margin-top: 25px;
+    margin-top: 22px;
   }
 
   .form-contacts__label {
@@ -159,7 +167,11 @@
   .form-contacts__email {
     display: block;
     width: 100%;
-    margin: 25px 0 0 0;
+    margin: 7px 0 0 0;
+  }
+
+  .form-contacts__mail {
+    margin-top: 24px;
   }
 
   .form-contacts__wrapper-phone {
@@ -170,8 +182,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 7px;
-      right: 0;
+      top: 10px;
+      right: -22px;
       width: 58px;
       height: 58px;
       border: 1px solid @verydeepgrey;
@@ -188,8 +200,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 24px;
-      right: 0;
+      top: 7px;
+      right: -22px;
       width: 58px;
       height: 58px;
       border: 1px solid @verydeepgrey;
@@ -201,7 +213,7 @@
 
 @media (min-width: @desktop-width) {
   .form-contacts {
-    margin: 80px 0 0;
+    margin: 70px 0 0;
     padding: 0;
   }
 
@@ -215,7 +227,7 @@
   }
 
   .form-contacts__label--off {
-    margin-right: 15px;
+    margin-right: 16px;
     display: inline-block;
   }
 
@@ -223,7 +235,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 73px;
   }
 
   .form-contacts__item {
@@ -245,24 +257,24 @@
   }
 
   .form-contacts__wrapper-phone::before {
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -25px;
   }
 
   .form-contacts__wrapper-email::before {
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -20px;
   }
 
   .form-contacts__email {
     display: inline-block;
     width: 100%;
-    margin-left: 14px;
+    margin-left: 19px;
     margin-top: 0;
   }
 
   .form-contacts__mail {
-    margin: 0;
+    margin: 0 0 0 9px;
     white-space: nowrap;
   }
 }

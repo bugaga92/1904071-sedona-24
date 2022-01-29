@@ -1,10 +1,27 @@
+.map {
+  margin-top: 50px;
+  margin-bottom: 38px;
+}
+
 .map__picture {
   margin: 0 -20px;
-  margin-top: 50px;
 }
 
 .map__frame {
   border: none;
   display: block;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    margin-top: 66px;
+  }
 }
