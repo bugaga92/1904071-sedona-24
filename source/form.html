@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>form</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Форма отзыва</title>
 </head>
 
 <body class="page__body">
@@ -56,16 +60,16 @@
           </legend>
           <ul class="form-name__list">
             <li class="form-name__item">
-              <label for="name" class="form-name__label">Имя*:</label>
-              <input class="form-name__name" type="text" name="name" id="name" placeholder="Петр" required>
+              <label class="form-name__label" for="name">Имя*:</label>
+              <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
             <li class="form-name__item">
-              <label for="surname" class="form-name__label">Фамилия*:</label>
-              <input class="form-name__surname" type="text" name="surname" id="surname" placeholder="Иванов" required>
+              <label class="form-name__label" for="surname">Фамилия*:</label>
+              <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
             <li class="form-name__item">
-              <label for="second-name" class="form-name__label">Отчество:</label>
-              <input class="form-name__second-name" type="text" name="second-name" id="second-name"
+              <label class="form-name__label" for="second-name">Отчество:</label>
+              <input class="form-name__input" type="text" name="second-name" id="second-name"
                 placeholder="Александрович">
             </li>
           </ul>
@@ -76,17 +80,18 @@
           </legend>
           <ul class="form-contacts__list">
             <li class="form-contacts__item">
-              <label for="phone" class="form-contacts__label">Контактный телефон*:</label>
-              <label for="phone" class="form-contacts__label form-contacts__label--off">Телефон*:</label>
-              <div class="form-contacts__wrapper-phone">
-                <input class="form-contacts__phone" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+              <label class="form-contacts__label" for="phone">
+                <span class="form-contacts__off">Контактный </span>телефон*:
+              </label>
+              <div class="form-contacts__icon-wrapper">
+                <input class="form-contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
                   required>
               </div>
             </li>
             <li class="form-contacts__item">
-              <label for="email" class="form-contacts__mail">Электронная почта*:</label>
-              <div class="form-contacts__wrapper-email">
-                <input class="form-contacts__email" type="email" name="email" id="email" placeholder="Введите e-mail"
+              <label class="form-contacts__label" for="email">Электронная почта*:</label>
+              <div class="form-contacts__icon-wrapper form-contacts__icon-wrapper--email">
+                <input class="form-contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail"
                   required>
               </div>
             </li>
@@ -112,7 +117,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-attractions">
-          <legend class="form-attaractions__legend">
+          <legend class="form-attractions__legend">
             <h3>Посещенные<br>достопримечательности:</h3>
           </legend>
           <ul class="form-attractions__list">
@@ -174,20 +179,20 @@
         </a>
       </p>
     </footer>
+    <!-- To show popup use classname «default-modal--open» -->
     <div class="default-modal default-modal--success">
       <strong class="default-modal__head">Ваш отзыв отправлен!</strong>
-      <p class="default-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+      <p class="default-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы
         опубликуем его на сайте.</p>
       <div class="default-modal__button-container">
-        <button class="button default-modal__button" type="button"><span class="button__text">Закрыть
-            окно</span></button>
+        <button class="button default-modal__button" type="button"><span class="button__text">Закрыть окно</span></button>
       </div>
     </div>
 
     <div class="default-modal default-modal--failure">
       <strong class="default-modal__head">Что-то пошло не так!</strong>
-      <p class="default-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button default-modal__button-short" type="button"><span class="button__text">OK</span></button>
+      <p class="default-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
+      <button class="button default-modal__button" type="button"><span class="button__text">OK</span></button>
     </div>
 
     <script src="js/menutoggle.js"></script>
