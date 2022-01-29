@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+.catalog-list__link {
+  display: block;
+}
+
 .catalog__text {
   text-transform: uppercase;
   font-size: 14px;
@@ -138,14 +142,14 @@
   }
 
   .catalog-list__item:first-child .catalog-list__title {
-    padding-top: 13px;
+    padding-top: 16px;
   }
 
   .catalog-list__image {
     width: 100%;
+    display: block;
     margin: 0;
   }
-
 
   .catalog-list__item:first-child .catalog-list__author {
     float: left;
@@ -162,7 +166,7 @@
   }
 
   .catalog-list__title {
-    padding-top: 12px;
+    padding-top: 15px;
   }
 
   .catalog-list__like {
@@ -212,15 +216,15 @@
 
   .catalog-list__figure {
     position: relative;
-    margin-bottom: -3px;
+    margin-bottom: 0;
   }
 
   .catalog-list__caption {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     left: 0;
     right: 0;
-    bottom: 3px;
+    bottom: 0;
     color: @white;
   }
 

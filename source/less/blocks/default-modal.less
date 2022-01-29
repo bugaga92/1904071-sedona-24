@@ -1,0 +1,114 @@
+.default-modal {
+  position: fixed;
+  display: none;
+  width: 100%;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: @white;
+  box-shadow: 0 7px 15px @greyshadow;
+  z-index: 100;
+}
+
+.default-modal--open {
+  display: block;
+}
+
+.default-modal__head {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: block;
+  padding: 35px 0;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.default-modal__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  padding: 0 40px 0 40px;
+  margin: 0;
+}
+
+.default-modal__button-container {
+  padding: 0 20px;
+  background-color: @grey;
+}
+
+.default-modal__button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.default-modal--failure .default-modal__button {
+  width: 180px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .default-modal--success {
+    top: 160px;
+    width: 640px;
+    height: 347px;
+  }
+
+  .default-modal--failure {
+    top: 210px;
+    width: 400px;
+    height: 347px;
+  }
+
+  .default-modal__head {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 50px 80px 0 80px;
+  }
+
+  .default-modal__text {
+    padding: 20px 70px;
+    margin-bottom: 25px;
+  }
+
+  .default-modal__button-container {
+    padding: 25px 90px;
+    background-color: @grey;
+  }
+
+  .default-modal__button {
+    font-size: 21px;
+  }
+
+  .default-modal--failure .default-modal__text {
+    padding: 20px 55px;
+    margin-bottom: 20px;
+  }
+
+  .default-modal--failure .default-modal__button {
+    width: 270px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .default-modal--success {
+    top: 91px;
+    width: 640px;
+    height: 347px;
+  }
+
+  .default-modal--failure {
+    top: 237px;
+  }
+}

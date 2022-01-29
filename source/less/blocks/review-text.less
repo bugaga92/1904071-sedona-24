@@ -10,6 +10,7 @@
   height: 160px;
   background: @grey;
   display: inline-block;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -39,7 +40,7 @@
   }
 
   .review-text__legend {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 76px;
   }
 
@@ -60,5 +61,9 @@
 @media (min-width: @desktop-width) {
   .review-text {
     margin: 43px 0 0;
+  }
+
+  .review-text__content {
+    margin-bottom: 60px;
   }
 }
