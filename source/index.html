@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
@@ -65,7 +65,11 @@
               <div class="advantages__image-wrapper">
                 <picture>
                   <source media="(min-width: 1200px)"
+                    srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
                     srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/photo-city-mobile.jpg"
@@ -79,7 +83,8 @@
                 </li>
                 <li class="features__item features__item--reverse features__item--souvenirs">
                   <h4 class="features__title">Сувениры</h4>
-                  <p class="features__description">не только китайского,<br class="features__br"> но и местного производства!</p>
+                  <p class="features__description">не только китайского,<br class="features__br"> но и местного
+                    производства!</p>
                 </li>
                 <li class="features__item features__item--food">
                   <h4 class="features__title">Еда</h4>
@@ -89,13 +94,18 @@
             </li>
             <li class="advantages__item advantages__item--solid">
               <div class="advantages__container advantages__container--solid advantages__container--reverse">
-                <h3 class="advantages__title advantages__title--image">Там есть <br class="features__br">мост дьявола</h3>
+                <h3 class="advantages__title advantages__title--image">Там есть <br class="features__br">мост дьявола
+                </h3>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantages__image-wrapper">
                 <picture>
                   <source media="(min-width: 1200px)"
+                    srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
                     srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/photo-bridge-mobile.jpg"
@@ -135,7 +145,9 @@
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__picture">
-            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837950.4613375285!2d-112.14498477493561!3d34.87521899820397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sua!4v1643402282580!5m2!1sen!2sua" width="320" height="350" allowfullscreen="Местоположение Седоны" loading="lazy"></iframe>
+          <iframe class="map__frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837950.4613375285!2d-112.14498477493561!3d34.87521899820397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sua!4v1643402282580!5m2!1sen!2sua"
+            width="320" height="350" allowfullscreen="Местоположение Седоны" loading="lazy"></iframe>
         </div>
       </section>
     </main>
