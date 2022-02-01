@@ -33,6 +33,8 @@
 .video__buttons-control {
   width: 280px;
   height: 66px;
+  display: flex;
+  align-items: center;
   background-color: @grey;
   margin: 0 20px;
   position: absolute;
@@ -75,9 +77,11 @@
 
 .video__button-replay {
   border: none;
-  position: relative;
-  top: 23px;
-  left: -65px;
+  margin-right: auto;
+  margin-left: 18px;
+  // position: relative;
+  // top: 23px;
+  // left: -65px;
   z-index: 20;
 }
 
@@ -87,9 +91,10 @@
 
 .video__button-subtitles {
   border: none;
-  position: relative;
-  top: 23px;
-  left: 50px;
+  margin-right: 19px;
+  // position: relative;
+  // top: 23px;
+  // left: 50px;
   z-index: 20;
 }
 
@@ -99,9 +104,10 @@
 
 .video__button-full-screen {
   border: none;
-  position: relative;
-  top: 23px;
-  left: 66px;
+  margin-right: 17px;
+  // position: relative;
+  // top: 23px;
+  // left: 66px;
   z-index: 20;
 }
 
@@ -204,11 +210,8 @@
   }
 
   .video__button-replay {
+    margin-left: 29px;
     background: transparent;
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    margin-top: -12px;
   }
 
   .video__icon-replay {
@@ -228,11 +231,8 @@
   }
 
   .video__button-full-screen {
+    margin-right: 35px;
     background: transparent;
-    position: absolute;
-    left: 580px;
-    top: 50%;
-    margin-top: -12px;
   }
 
   .video__icon-full-screen {
