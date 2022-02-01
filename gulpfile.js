@@ -11,6 +11,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import cheerio from 'gulp-cheerio';
 import browser from 'browser-sync';
 
 // Styles
@@ -27,7 +28,6 @@ export const styles = () => {
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
-
 
 // HTML
 
@@ -75,8 +75,15 @@ const svg = () =>
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/sprite-icons/*.svg')
     .pipe(svgo())
+    .pipe(cheerio({
+      run: ($) => {
+          $('[fill]').removeAttr('fill');
+          $('[stroke]').removeAttr('stroke');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -90,6 +97,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest'
   ], {
     base: 'source'
   })

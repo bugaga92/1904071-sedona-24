@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>Каталог</title>
@@ -15,7 +15,7 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -44,7 +44,7 @@
       <section class="main-picture main-picture--inner">
         <h1 class="visually-hidden">Каталог фото и видео</h1>
         <div class="main-picture__image main-picture__image-inner">
-          <img class="main-picture__img" src="/img/sedona.svg" width="457" height="78" alt="Sedona">
+          <img class="main-picture__img" src="img/sedona.svg" width="457" height="78" alt="Sedona">
         </div>
       </section>
     </header>
@@ -68,11 +68,13 @@
                 </picture>
               </a>
               <figcaption class="catalog-list__caption">
-                <h3 class="catalog-list__title">Неродные просторы</h3>
-                <p class="catalog-list__author">
-                  Автор фото:
-                  <span>Борис</span>
-                </p>
+                <div class="catalog-list__wrapper">
+                  <h3 class="catalog-list__title">Неродные просторы</h3>
+                  <p class="catalog-list__author">
+                    Автор фото:
+                    <span>Борис</span>
+                  </p>
+                </div>
                 <button class="catalog-list__like" type="button" title="Нравится">
                   <span class="visually-hidden">Нравится</span>
                   <span class="catalog-list__like-count">1350</span>
@@ -93,11 +95,13 @@
                 </picture>
               </a>
               <figcaption class="catalog-list__caption">
-                <h3 class="catalog-list__title">Местная растительность</h3>
-                <p class="catalog-list__author">
-                  Автор фото:
-                  <span>Сергей</span>
-                </p>
+                <div class="catalog-list__wrapper">
+                  <h3 class="catalog-list__title">Местная растительность</h3>
+                  <p class="catalog-list__author">
+                    Автор фото:
+                    <span>Сергей</span>
+                  </p>
+                </div>
                 <button class="catalog-list__like" type="button" title="Нравится">
                   <span class="visually-hidden">Нравится</span>
                   <span class="catalog-list__like-count">143</span>
@@ -118,11 +122,13 @@
                 </picture>
               </a>
               <figcaption class="catalog-list__caption">
-                <h3 class="catalog-list__title">Дорога на север</h3>
-                <p class="catalog-list__author">
-                  Автор фото:
-                  <span>Петр</span>
-                </p>
+                <div class="catalog-list__wrapper">
+                  <h3 class="catalog-list__title">Дорога на север</h3>
+                  <p class="catalog-list__author">
+                    Автор фото:
+                    <span>Петр</span>
+                  </p>
+                </div>
                 <button class="catalog-list__like" type="button" title="Нравится">
                   <span class="visually-hidden">Нравится</span>
                   <span class="catalog-list__like-count">96</span>
@@ -143,11 +149,13 @@
                 </picture>
               </a>
               <figcaption class="catalog-list__caption">
-                <h3 class="catalog-list__title">Мост Дьявола</h3>
-                <p class="catalog-list__author">
-                  Автор фото:
-                  <span>Антон</span>
-                </p>
+                <div class="catalog-list__wrapper">
+                  <h3 class="catalog-list__title">Мост Дьявола</h3>
+                  <p class="catalog-list__author">
+                    Автор фото:
+                    <span>Антон</span>
+                  </p>
+                </div>
                 <button class="catalog-list__like" type="button" title="Нравится">
                   <span class="visually-hidden">Нравится</span>
                   <span class="catalog-list__like-count">254</span>
@@ -191,7 +199,7 @@
             </button>
             <button class="video__button-full-screen" type="button" title="Развернуть во весь экран">
               <svg class="video__icon-full-screen" width="20" height="20" viewBox="0 0 20 20">
-                <use xlink:href="img/sprite.svg#icon-full-screen"></use>
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
               </svg>
               <span class="visually-hidden">Развернуть во весь экран</span>
             </button>
@@ -207,11 +215,11 @@
           </a>
         </li>
         <li class="page-footer__social-item page-footer__social-item--facebook">
-          <a class="page-footer__social-link " href="#"><span class="visually-hidden">Мы в Фейсбук</span>
+          <a class="page-footer__social-link" href="#"><span class="visually-hidden">Мы в Фейсбук</span>
           </a>
         </li>
         <li class="page-footer__social-item page-footer__social-item--youtube">
-          <a class="page-footer__social-link " href="#"><span class="visually-hidden">Мы на Ютуб</span>
+          <a class="page-footer__social-link" href="#"><span class="visually-hidden">Мы на Ютуб</span>
           </a>
         </li>
       </ul>
@@ -219,12 +227,12 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35">
-            <use xlink:href="img/sprite.svg#copyright-logo"></use>
+            <use xlink:href="img/sprite.svg#icon-copyright"></use>
           </svg>
         </a>
       </p>
     </footer>
-    <script src="js/menutoggle.js"></script>
+    <script src="js/script.js"></script>
   </div>
 </body>
 
